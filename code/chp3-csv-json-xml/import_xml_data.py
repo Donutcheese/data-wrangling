@@ -2,7 +2,7 @@ from xml.etree import ElementTree as ET
 
 tree = ET.parse('../../data/chp3/data-text.xml')
 root = tree.getroot()
-print root
+print (root)
 
 data = root.find('Data')
 
@@ -24,4 +24,4 @@ for observation in data:
         record[rec_key] = rec_value
     all_data.append(record)
 
-print all_data
+print (all_data)
